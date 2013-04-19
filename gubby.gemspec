@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Gubby::VERSION
   spec.authors       = ["Justin Basinger"]
   spec.email         = ["justin.m.basinger@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = "This is a system used to create component based objects. Primarily for games, but you don't have to use it just for that if you don't want to."
+  spec.summary       = "Gubby component system"
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -20,4 +20,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
+	
 end
