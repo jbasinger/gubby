@@ -20,6 +20,9 @@ module Gubby
 			components.each do |c|
 				extend(c)
 				@components.push(c)
+				if self.respond_to?(:component_added) then
+					self.component_added
+				end
 			end
 			
 			@engine.refresh_entity(self) unless @engine.nil?
@@ -31,6 +34,9 @@ module Gubby
 			components.each do |c|
 				unextend(c)
 				@components.delete(c)
+				if self.respond_to?(:component_removed) then
+					self.component_removed
+				end
 			end
 
 			@engine.refresh_entity(self) unless @engine.nil?
